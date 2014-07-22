@@ -1,8 +1,10 @@
 require 'idea_box'
 require 'sinatra'
 require 'sinatra/reloader'
+require 'sass'
 
 class IdeaBoxApp < Sinatra::Base
+  get('/styles.css'){ scss :styles }
   set :method_override, true
   set :root, 'lib/app'
 
@@ -10,17 +12,24 @@ class IdeaBoxApp < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  get '/' do
-    erb :index, locals: {ideas: IdeaStore.all}
-  end
-
   get '/:id/edit' do |id|
     idea = IdeaStore.find(id.to_i)
-    erb :edit, locals: {id: id, idea: idea}
+    erb :edit, locals: {idea: idea}
+  end
+
+  get '/' do
+    erb :index, locals: {ideas: IdeaStore.all, idea: Idea.new(params)}
   end
 
   put '/:id' do |id|
     IdeaStore.update(id.to_i, params[:idea])
+    redirect '/'
+  end
+
+  post '/:id/like' do |id|
+    idea = IdeaStore.find(id.to_i)
+    idea.like!
+    IdeaStore.update(id.to_i, idea.to_h)
     redirect '/'
   end
 
