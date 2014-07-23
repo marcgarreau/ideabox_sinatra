@@ -1,0 +1,7 @@
+<strong>Title:</strong> <%= idea.title %><br/>
+<strong>Description:</strong> <%= idea.description %><br/>
+<strong>Upvotes:</strong> <%= idea.rank %><br/>
+<strong>Tags:</strong> <%= idea.tags.join(", ") %><br/>
+<% if idea.myfile %>
+  <strong>Picture:</strong><br/> <%= "<img src='/images/#{idea.myfile}' alt='user_upload' height='150px' width='220px'" %><br/>
+<% end %>

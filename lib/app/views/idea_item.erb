@@ -1,0 +1,22 @@
+<h3>[Existing Ideas]</h3>
+<form action='/filter' method='GET' class='filterer' style="display: inline" >
+  <select name="selected_tag">
+  <% tags.each do |tag| %>
+    <option><%= tag %></option>
+  <% end %>
+  </select>
+  <input type='submit' value="Filter"/>
+</form>
+<ul>
+  <% ideas.each do |idea| %>
+    <li>
+      <%= erb :idea_descriptor, locals: {idea: idea} %><br/>
+      <%= erb :idea_tagger, locals: {idea: idea} %>
+      <%= erb :idea_uploader, locals: {idea: idea} %><br/><br/>
+      <%= erb :idea_liker, locals: {idea: idea} %>
+      <%= erb :idea_editor, locals: {idea: idea} %>
+      <%= erb :idea_deletor, locals: {idea: idea} %>
+      <br/>
+    </li>
+  <% end %>
+</ul>

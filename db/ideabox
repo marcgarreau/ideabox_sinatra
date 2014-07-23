@@ -1,6 +1,25 @@
 ---
 ideas:
-- title: a thing!!
-  description: stuff and thingz
-- title: another idea
-  description: words about the idea and stuff
+- title: Hello
+  description: How are you
+  rank: 2
+  id: 1
+  tags:
+  - bla bla
+  - ad
+  - dsds
+  - asdds
+- title: idea 3
+  description: threethreethree
+  rank: 0
+  id: 2
+  tags:
+  - asd
+  myfile: cat2.jpeg
+- title: pix
+  description: pix comin
+  rank: 0
+  id: 3
+  tags:
+  - cats
+  myfile: cat1.jpeg
