@@ -1,25 +1,28 @@
 ---
 ideas:
-- title: Hello
-  description: How are you
-  rank: 2
-  id: 1
-  tags:
-  - bla bla
-  - ad
-  - dsds
-  - asdds
 - title: idea 3
   description: threethreethree
   rank: 0
+  id: 0
+  tags:
+  - asd
+  - pew
+  - zip
+  myfile: cat2.jpeg
+- title: make cats fly
+  description: prob a bad idea
+  rank: 3
   id: 2
   tags:
   - asd
-  myfile: cat2.jpeg
-- title: pix
-  description: pix comin
-  rank: 0
-  id: 3
-  tags:
-  - cats
+  - pew
   myfile: cat1.jpeg
+- title: das
+  description: dsad
+  rank: 4
+  id: 2
+  tags:
+  - asd
+  - pew
+  - zoop
+  myfile: 

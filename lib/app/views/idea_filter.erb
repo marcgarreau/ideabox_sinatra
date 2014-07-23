@@ -1,0 +1,11 @@
+<form action='/filter' method='GET' class='filterer' style="display: inline" >
+  <select name="selected_tag">
+  <% tags.each do |tag| %>
+    <option><%= tag %></option>
+  <% end %>
+  </select>
+  <input type='submit' value="Filter"/>
+</form>
+<form action='/' method='GET' style="display: inline">
+  <input type='submit' value="Remove Filters"/>
+</form>

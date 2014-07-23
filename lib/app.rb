@@ -59,6 +59,11 @@ class IdeaBoxApp < Sinatra::Base
     end
   end
 
+  post '/logout' do
+    session.clear
+    redirect to('/')
+  end
+
   post '/:id/like' do |id|
     idea = IdeaStore.find(id.to_i)
     idea.like!
