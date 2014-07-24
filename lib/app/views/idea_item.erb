@@ -1,13 +1,17 @@
-<ul>
-  <% ideas.each do |idea| %>
-    <li>
-      <%= erb :idea_descriptor, locals: {idea: idea} %><br/>
-      <%= erb :idea_tagger, locals: {idea: idea} %>
-      <%= erb :idea_uploader, locals: {idea: idea} %><br/><br/>
-      <%= erb :idea_liker, locals: {idea: idea} %>
-      <%= erb :idea_editor, locals: {idea: idea} %>
-      <%= erb :idea_deletor, locals: {idea: idea} %>
-      <br/>
-    </li>
-  <% end %>
-</ul>
+<div id="menu-outer">
+  <div class="table">
+    <ul id="horizontal-list">
+      <% ideas.each do |idea| %>
+        <li>
+          <%= erb :idea_descriptor, locals: {idea: idea} %><br/>
+          <%= erb :idea_tagger, locals: {idea: idea} %>
+          <%= erb :idea_uploader, locals: {idea: idea} %><br/><br/>
+          <%= erb :idea_liker, locals: {idea: idea} %>
+          <%= erb :idea_editor, locals: {idea: idea} %>
+          <%= erb :idea_deletor, locals: {idea: idea} %>
+          <br/>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

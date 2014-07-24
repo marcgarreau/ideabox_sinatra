@@ -8,12 +8,13 @@ ul {
   margin-left: -55px
 }
 
-h4 {
-  font-size: 1.4em;
+h1 {
+  font-size: 3.6em;
+  text-align: center;
 }
 
-.filterer {
-  // why the fuck cant this be manipulated
+h4 {
+  font-size: 1.4em;
 }
 
 li {
@@ -22,6 +23,7 @@ li {
   border: 4px solid;
   max-width: 1000px;
   margin: 15px 0;
+  box-shadow:6px 6px 10px rgba(0,0,0,0.5);
 }
 
 .login {
@@ -30,10 +32,11 @@ li {
   border: 4px solid;
   max-width: 225px;
   margin: -30px auto 20px auto;
+  // box-shadow:6px 6px 10px rgba(0,0,0,0.5);
 }
 
 .login_box {
-  margin: 0 auto;
+  margin: 70px auto 0 auto;
 }
 
 .right_wrapper {
@@ -44,11 +47,6 @@ li {
 
 .right_wrapper h3 {
   margin-left: -27px;
-}
-
-h1 {
-  font-size: 3.5em;
-  text-align: center;
 }
 
 .left_wrapper {
@@ -66,9 +64,14 @@ h1 {
   padding: 0 30px 15px 30px;
   border: 4px solid;
   min-width: 200px;
+  box-shadow:6px 6px 10px rgba(0,0,0,0.5);
 }
 
 h3 {
   font-size: 1.9em;
   text-align: center;
+}
+
+.items {
+  float: right;
 }

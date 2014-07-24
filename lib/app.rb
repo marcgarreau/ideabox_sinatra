@@ -2,7 +2,6 @@ require 'pry'
 require 'idea_box'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'sass'
 
 class IdeaBoxApp < Sinatra::Base
   set :root, 'lib/app'
