@@ -2,7 +2,7 @@
 ideas:
 - title: idea 3
   description: threethreethree
-  rank: 0
+  rank: 2
   id: 0
   tags:
   - asd
@@ -10,19 +10,10 @@ ideas:
   - zip
   myfile: cat2.jpeg
 - title: make cats fly
-  description: prob a bad idea
-  rank: 3
-  id: 2
+  description: prob a bad ideas
+  rank: 0
+  id: 1
   tags:
-  - asd
-  - pew
+  - 
+  - cow
   myfile: cat1.jpeg
-- title: das
-  description: dsad
-  rank: 4
-  id: 2
-  tags:
-  - asd
-  - pew
-  - zoop
-  myfile: 

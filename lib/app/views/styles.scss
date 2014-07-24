@@ -5,6 +5,7 @@ body {
 
 ul {
   list-style-type: none;
+  margin-left: -55px
 }
 
 h4 {
@@ -17,7 +18,7 @@ h4 {
 
 li {
   background-color: white;
-  padding: 10px;
+  padding: 15px;
   border: 4px solid;
   max-width: 1000px;
   margin: 15px 0;
@@ -35,9 +36,14 @@ li {
   margin: 0 auto;
 }
 
-.item_wrapper {
+.right_wrapper {
   float: right;
-  margin-right: 50px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.right_wrapper h3 {
+  margin-left: -27px;
 }
 
 h1 {
@@ -45,9 +51,13 @@ h1 {
   text-align: center;
 }
 
-.header_wrapper {
+.left_wrapper {
   float: left;
   margin-left: 50px;
+}
+
+.filters {
+  margin-left: 10px;
 }
 
 .create_idea {

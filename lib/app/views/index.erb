@@ -2,11 +2,11 @@
   <form action='/logout' method='POST' class="sign_out">
     <input type='submit' value='Sign out'/>
   </form>
-  <div class="header_wrapper">
+  <div class="left_wrapper">
     <h1>[IdeaBox]</h1>
     <%= erb :create_idea, locals: {ideas: ideas, idea: idea} %>
   </div>
-  <div class="item_wrapper">
+  <div class="right_wrapper">
     <h3>[Existing Ideas]</h3>
     <%= erb :idea_filter, locals: {ideas: ideas, idea: idea, tags: tags} %>
     <%= erb :idea_item, locals: {ideas: ideas, idea: idea, tags: tags} %>

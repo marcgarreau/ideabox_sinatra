@@ -33,7 +33,7 @@ class IdeaBoxApp < Sinatra::Base
     erb :index, locals: {
         ideas: IdeaStore.all.select {|idea| idea.tags.include? params[:selected_tag]},
         idea: Idea.new(params),
-        tags: IdeaStore.all.flat_map {|idea| idea.tags}.uniq.sort
+        tags: IdeaStore.all.flat_map {|idea| idea.tags}.uniq.compact.sort
       }
   end
 
@@ -41,7 +41,7 @@ class IdeaBoxApp < Sinatra::Base
     erb :index, locals: {
         ideas: IdeaStore.all.sort,
         idea: Idea.new(params),
-        tags: IdeaStore.all.flat_map {|idea| idea.tags}.uniq.sort
+        tags: IdeaStore.all.flat_map {|idea| idea.tags}.uniq.compact.sort
       }
   end
 
